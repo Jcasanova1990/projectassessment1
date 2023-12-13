@@ -1,33 +1,77 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 #counterContainer {
+    display: flex;
+    flex-direction: row;
     text-align: center;
 }
 
-input,
-p,
-button {
-    margin: 5px;
-}
-
-button {
+#incrementBtn {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 15%;
     background-color: lightgray;
     color: white;
     padding: 10px 20px;
     border-radius: 20%;
     cursor: pointer;
-    margin: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }
 
-button:hover {
+#decrementBtn {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 57%;
+    margin-top: 15%;
+    background-color: lightgray;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+#counterInput {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 14.5%;
+    border: solid grey 2px;
+    height: 50px;
+    width: 90px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+#counterValue {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 49%;
+    margin-top: 10%;
+    font-size: 24px;
+}
+
+
+#decrementBtn:hover {
+    background-color: white;
+    color: grey;
+}
+
+#incrementBtn:hover {
     background-color: white;
     color: grey;
 }
